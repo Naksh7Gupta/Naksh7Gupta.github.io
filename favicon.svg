@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Naksh Gupta monogram">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe0a0" />
+      <stop offset="100%" stop-color="#df9c48" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#111a23" />
+  <circle cx="64" cy="64" r="42" fill="url(#g)" />
+  <text
+    x="64"
+    y="73"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="34"
+    fill="#23170f"
+  >
+    NG
+  </text>
+</svg>
