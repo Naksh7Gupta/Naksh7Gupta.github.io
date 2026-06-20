@@ -1,5 +1,25 @@
 const projects = [
   {
+    name: "AI Minecraft Build Battle",
+    language: "TypeScript",
+    year: "2026",
+    description:
+      "ThinkNet video series: AI models compete in real-time. GPT-5.5 Pro vs Opus 4.8 vs Fable-5 in a custom HTML/Three.js Minecraft-style game engine. Fable-5 emerges as the surprise winner. Features polished intro sequences, thumbnail design, and spatial sound.",
+    link: "https://youtube.com/@NakshGuptaOfficial",
+    focus: "YouTube production",
+    stars: 1,
+  },
+  {
+    name: "Medical AI Workspace",
+    language: "Full-stack",
+    year: "2026",
+    description:
+      "Specialized AI platform designed to accelerate medical students' learning. Synthesizes complex medical knowledge with AI-powered tooling, creating an intelligent workspace for future doctors. Bridges AI and healthcare education at scale.",
+    link: "#",
+    focus: "Healthcare AI education",
+    stars: 1,
+  },
+  {
     name: "Velosite",
     language: "TypeScript",
     year: "2026",
@@ -39,16 +59,6 @@ const projects = [
     focus: "Conversational AI",
     stars: 1,
   },
-  {
-    name: "Naksh7Gupta",
-    language: "Profile",
-    year: "2026",
-    description:
-      "The public profile README that frames Naksh's identity as an AI Director, deep learning practitioner, and builder growing in public.",
-    link: "https://github.com/Naksh7Gupta/Naksh7Gupta",
-    focus: "Public identity",
-    stars: 1,
-  },
 ];
 
 const projectGrid = document.querySelector("#project-grid");
@@ -70,7 +80,7 @@ projectGrid.innerHTML = projects
           <span>${project.stars} star</span>
         </div>
         <a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">
-          View repository
+          View ${project.name === "Medical AI Workspace" ? "details" : "repository"}
         </a>
       </article>
     `
