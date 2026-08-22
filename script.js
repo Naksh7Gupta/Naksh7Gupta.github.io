@@ -1,62 +1,62 @@
 const projects = [
   {
-    name: "AI Minecraft Build Battle",
-    language: "TypeScript",
+    name: "Frontier LLM Systems",
+    language: "Transformers",
     year: "2026",
     description:
-      "ThinkNet video series: AI models compete in real-time. GPT-5.5 Pro vs Opus 4.8 vs Fable-5 in a custom HTML/Three.js Minecraft-style game engine. Fable-5 emerges as the surprise winner. Features polished intro sequences, thumbnail design, and spatial sound.",
-    link: "https://youtube.com/@NakshGuptaOfficial",
-    focus: "YouTube production",
+      "Deep study track focused on transformer architecture, attention mechanisms, tokenizer design, and the engineering choices behind frontier language models.",
+    link: "#",
+    focus: "Core research direction",
     stars: 1,
   },
   {
     name: "Medical AI Workspace",
-    language: "Full-stack",
+    language: "Applied AI",
     year: "2026",
     description:
-      "Specialized AI platform designed to accelerate medical students' learning. Synthesizes complex medical knowledge with AI-powered tooling, creating an intelligent workspace for future doctors. Bridges AI and healthcare education at scale.",
+      "Specialized AI workspace engineered to accelerate medical students' learning and streamline complex medical knowledge synthesis through intelligent tools.",
     link: "#",
     focus: "Healthcare AI education",
     stars: 1,
   },
   {
-    name: "Velosite",
-    language: "TypeScript",
+    name: "Efficient AI Inference",
+    language: "Systems",
     year: "2026",
     description:
-      "An AI-powered website and UI generator that turns simple prompts into clean, modern, responsive frontend experiences in seconds.",
-    link: "https://github.com/Naksh7Gupta/Velosite",
-    focus: "AI UI generation",
+      "Focused on KV cache, inference optimization, and practical scaling strategies required to make advanced AI systems fast and resource-efficient.",
+    link: "#",
+    focus: "Performance engineering",
     stars: 1,
   },
   {
-    name: "Diffusion-Model",
-    language: "Python",
+    name: "Distributed Training",
+    language: "AI Infrastructure",
     year: "2026",
     description:
-      "Implemented DDPM from scratch with U-Net, forward and reverse diffusion, noise scheduling, and a training pipeline that learns to generate MNIST digits.",
-    link: "https://github.com/Naksh7Gupta/Diffusion-Model",
-    focus: "Research implementation",
+      "Learning data/model parallel methods, systems trade-offs, and tooling needed to train large models effectively under real-world resource constraints.",
+    link: "#",
+    focus: "Scale engineering",
     stars: 1,
   },
   {
-    name: "Loan-approval-Project",
-    language: "JavaScript",
+    name: "Multimodal AI",
+    language: "Vision + Audio + Video",
     year: "2026",
     description:
-      "An ML loan approval system with over 95 percent accuracy, showing end-to-end model thinking and a practical deployment mindset.",
-    link: "https://github.com/Naksh7Gupta/Loan-approval-Project",
-    focus: "Applied machine learning",
+      "Exploring diffusion and transformer pathways for image, video, and speech intelligence, including multimodal reasoning and generation trajectories toward AGI.",
+    link: "#",
+    focus: "Future-facing research",
     stars: 1,
   },
   {
-    name: "NeuraNova",
-    language: "Python",
+    name: "ThinkNet Open Mission",
+    language: "Education + Community",
     year: "2026",
     description:
-      "An AI-powered chatbot project focused on natural conversation, builder experimentation, and practical NLP exploration.",
-    link: "https://github.com/Naksh7Gupta/NeuraNova",
-    focus: "Conversational AI",
+      "Building a long-term path from YouTube AI education to an open-source AI organization contributing world-class projects and research.",
+    link: "https://youtube.com/@NakshGuptaOfficial",
+    focus: "Long-term vision",
     stars: 1,
   },
 ];
@@ -80,7 +80,7 @@ projectGrid.innerHTML = projects
           <span>${project.stars} star</span>
         </div>
         <a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">
-          View ${project.name === "Medical AI Workspace" ? "details" : "repository"}
+          View ${project.name === "ThinkNet Open Mission" ? "channel" : "focus"}
         </a>
       </article>
     `
