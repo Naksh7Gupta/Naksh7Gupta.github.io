@@ -1,63 +1,30 @@
 const projects = [
   {
-    name: "Frontier LLM Systems",
-    language: "Transformers",
-    year: "2026",
+    name: "Open AI Work",
+    language: "Datasets + Projects",
+    year: "Ongoing",
     description:
-      "Deep study track focused on transformer architecture, attention mechanisms, tokenizer design, and the engineering choices behind frontier language models.",
-    link: "#",
-    focus: "Core research direction",
-    stars: 1,
+      "Open-source datasets, projects, and technical experiments that turn AI ideas into work that can be inspected, tested, and improved.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "Public engineering",
   },
   {
-    name: "Medical AI Workspace",
-    language: "Applied AI",
-    year: "2026",
+    name: "Autonomous AI Drone",
+    language: "Robotics + Vision",
+    year: "In development",
     description:
-      "Specialized AI workspace engineered to accelerate medical students' learning and streamline complex medical knowledge synthesis through intelligent tools.",
-    link: "#",
-    focus: "Healthcare AI education",
-    stars: 1,
+      "Ongoing research and development toward an autonomous AI drone capable of perception, navigation, and real-world mission execution.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "Research direction",
   },
   {
-    name: "Efficient AI Inference",
-    language: "Systems",
-    year: "2026",
+    name: "ThinkNet",
+    language: "Open AI",
+    year: "Ongoing",
     description:
-      "Focused on KV cache, inference optimization, and practical scaling strategies required to make advanced AI systems fast and resource-efficient.",
-    link: "#",
-    focus: "Performance engineering",
-    stars: 1,
-  },
-  {
-    name: "Distributed Training",
-    language: "AI Infrastructure",
-    year: "2026",
-    description:
-      "Learning data/model parallel methods, systems trade-offs, and tooling needed to train large models effectively under real-world resource constraints.",
-    link: "#",
-    focus: "Scale engineering",
-    stars: 1,
-  },
-  {
-    name: "Multimodal AI",
-    language: "Vision + Audio + Video",
-    year: "2026",
-    description:
-      "Exploring diffusion and transformer pathways for image, video, and speech intelligence, including multimodal reasoning and generation trajectories toward AGI.",
-    link: "#",
-    focus: "Future-facing research",
-    stars: 1,
-  },
-  {
-    name: "ThinkNet Open Mission",
-    language: "Education + Community",
-    year: "2026",
-    description:
-      "Building a long-term path from YouTube AI education to an open-source AI organization contributing world-class projects and research.",
-    link: "https://youtube.com/@NakshGuptaOfficial",
-    focus: "Long-term vision",
-    stars: 1,
+      "A growing body of AI datasets and projects built around open technical work, experimentation, and continuous improvement.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "Open-source work",
   },
 ];
 
@@ -77,10 +44,10 @@ projectGrid.innerHTML = projects
         </div>
         <div class="project-meta">
           <span>${project.year}</span>
-          <span>${project.stars} star</span>
+          <span>Open work</span>
         </div>
         <a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">
-          View ${project.name === "ThinkNet Open Mission" ? "channel" : "focus"}
+          Explore on GitHub
         </a>
       </article>
     `
@@ -99,7 +66,7 @@ const observer = new IntersectionObserver(
   { threshold: 0.18 }
 );
 
-document.querySelectorAll(".section, .quote-shell, .footer, .story-card, .signal-card").forEach((item) => {
+document.querySelectorAll(".section, .footer, .story-card, .signal-card").forEach((item) => {
   item.classList.add("reveal");
   observer.observe(item);
 });
