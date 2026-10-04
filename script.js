@@ -1,30 +1,63 @@
 const projects = [
   {
-    name: "Open AI Work",
-    language: "Datasets + Projects",
+    name: "Open AI Datasets",
+    language: "Machine Learning",
     year: "Ongoing",
     description:
-      "Open-source datasets, projects, and technical experiments that turn AI ideas into work that can be inspected, tested, and improved.",
+      "Open-source datasets and practical AI work that make experimentation, testing, and continuous improvement accessible in public.",
     link: "https://github.com/Naksh7Gupta",
-    focus: "Public engineering",
+    focus: "Open-source work",
+    stars: 1,
+  },
+  {
+    name: "Computer Vision",
+    language: "Vision Systems",
+    year: "Ongoing",
+    description:
+      "Exploring perception-focused systems and visual intelligence as foundations for reliable real-world AI applications.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "Applied research",
+    stars: 1,
+  },
+  {
+    name: "Generative AI",
+    language: "Deep Learning",
+    year: "Ongoing",
+    description:
+      "Technical experiments in generative models, with an emphasis on implementation, testing, and understanding system behavior.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "AI experimentation",
+    stars: 1,
   },
   {
     name: "Autonomous AI Drone",
-    language: "Robotics + Vision",
+    language: "Robotics",
     year: "In development",
     description:
-      "Ongoing research and development toward an autonomous AI drone capable of perception, navigation, and real-world mission execution.",
+      "Ongoing research toward an AI drone capable of perception, navigation, and responsible real-world mission execution.",
     link: "https://github.com/Naksh7Gupta",
-    focus: "Research direction",
+    focus: "Robotics research",
+    stars: 1,
+  },
+  {
+    name: "Practical AI Systems",
+    language: "AI Engineering",
+    year: "Ongoing",
+    description:
+      "Building and evaluating useful AI systems with a focus on real-world constraints, reliable behavior, and steady iteration.",
+    link: "https://github.com/Naksh7Gupta",
+    focus: "Systems engineering",
+    stars: 1,
   },
   {
     name: "ThinkNet",
     language: "Open AI",
     year: "Ongoing",
     description:
-      "A growing body of AI datasets and projects built around open technical work, experimentation, and continuous improvement.",
+      "Open projects, datasets, and technical work created around a long-term goal of contributing useful AI technologies.",
     link: "https://github.com/Naksh7Gupta",
-    focus: "Open-source work",
+    focus: "Long-term vision",
+    stars: 1,
   },
 ];
 
@@ -44,10 +77,10 @@ projectGrid.innerHTML = projects
         </div>
         <div class="project-meta">
           <span>${project.year}</span>
-          <span>Open work</span>
+          <span>${project.stars} star</span>
         </div>
         <a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">
-          Explore on GitHub
+          View ${project.name === "ThinkNet" ? "work" : "focus"}
         </a>
       </article>
     `
@@ -66,7 +99,7 @@ const observer = new IntersectionObserver(
   { threshold: 0.18 }
 );
 
-document.querySelectorAll(".section, .footer, .story-card, .signal-card").forEach((item) => {
+document.querySelectorAll(".section, .quote-shell, .footer, .story-card, .signal-card").forEach((item) => {
   item.classList.add("reveal");
   observer.observe(item);
 });
